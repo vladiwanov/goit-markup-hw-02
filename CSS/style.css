@@ -1,0 +1,311 @@
+/* ___________Студия__________ */
+/* ПАЛИТРА и шрифты  */
+
+/* ----хедер ----  */
+/* основной фона цвет - #ffffff */
+/* цвет текста хедера (контакты) - #757575 */
+/* заголовки (навигация хедера) - #212121 */
+/* текст лого studio - #212121 */
+/* текст лого web - #2196F3 */
+/* цвет выделения  - #ffffff */
+/* шрифты Roboto (500 - нави и контакты) Raleway (700 - лого) */
+/* letterspacing - 0.2 - navi, 0.3 - logo */
+
+/* ---------main Studio------*/
+/* основной  цвет фона - #ffffff */
+/* вторичный цвет - #F5F4FA */
+/* основной текст - #757575 */
+/* заголовки - #212121 */
+/* акцент (выделение)- #2196F3 */
+/* фон иконок соцсетей - #AFB1B8 */
+/*  цвет фона подписей к изображениям - rgba(47, 48, 58, 0.8); */
+/* цвет подписей к изображениям - #ffffff */
+/* шрифты Roboto (400 - базацы,700 - заголовки, 900 - главный заголовок) */
+/* letterspacing - 0.03,  */
+
+/* ---------main Portfolio---- */
+/* основной  цвет фона - #ffffff,   ???  #E5E5E5 */
+/* шрифты Roboto (400 - абзацы ,500 - кнопки,700 - заголовки) */
+
+/*---------футер---------- */
+/* цвет фона  футера - #2F303A */
+/* цвет фона иконок футера - rgba(255, 255, 255, 0.1) */
+/* заголовки футера  - #ffffff */
+/* основной текст футера  - rgba(47, 48, 58, 0.8); */
+/* текст вниху футера - rgba(255, 255, 255, 0.4) */
+/* шрифты Roboto (400,700) Raleway (700) */
+
+/* ---- global preferences ----- */
+:root {
+  --primary-text-color: #757575;
+  --text-title-color: #212121;
+  --accent-color: #2196f3;
+  --background-color: #ffffff;
+  --secong-bgc: #f5f4fa;
+  --footer-bgc: #2f303a;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.71px;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+.list {
+  list-style: none;
+}
+h1,
+h2,
+h3 {
+  font-family: Roboto;
+  color: var(--text-title-color);
+}
+/* ---end global oreferenses----- */
+
+/* -------- header -------------- */
+
+/* ----logo---- */
+.logo {
+  color: #2196f3;
+  font-family: Raleway, cursive;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.logo-studio {
+  color: var(--text-title-color);
+}
+/* ---nav--- */
+.site-nav .link {
+  color: var(--text-title-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+.header-contacts {
+  color: var(--primary-text-color);
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.header-contacts:hover,
+.header-contacts:focus {
+  color: var(--accent-color);
+}
+
+/* ---- end header ----- */
+
+/* ----------- main ------------ */
+
+/* -----common main ----- */
+
+.section {
+  color: var(--primary-text-color);
+}
+
+.section-title {
+  color: var(--text-title-color);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* -----end common main ------ */
+
+/*  --- hat ------ */
+.hat {
+}
+.hat-title {
+  color: #ffffff;
+  background: rgba(47, 48, 58, 0.8);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.button {
+  background-color: var(--accent-color);
+  color: var(--background-color);
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+/* -----end hat ---- */
+
+/* ----- features ------ */
+.features-title {
+  color: var(--text-title-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+/* 
+.section-features-img {
+  background-color: #f5f4fa;
+  position: absolute;
+  width: 270px;
+  height: 120px;
+  left: 215px;
+top: 774px;
+} */
+
+/* ------- end features ------ */
+
+/* ----- our-business -------- */
+.section figcaption {
+  /* .imgtext { */
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  background: rgba(47, 48, 58, 0.8);
+  color: #ffffff;
+  /* color: #ff0000; */
+}
+
+/* ------end our-business ---- */
+
+/* ------ our team ----------- */
+.team-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.team .team-text {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  /* color: #ff0000; */
+}
+.our-team {
+  background-color: var(--secong-bgc);
+}
+/* ------ end our team ------- */
+
+/* ---our clients--------- */
+/* ---end our clients----- */
+
+/* ------- end main ------- */
+/*  -------- footer ------- */
+footer {
+  background-color: var(--footer-bgc);
+}
+.logo-footer {
+  color: #ffffff;
+}
+
+address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.footer-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.contacts {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.form-text {
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.copyright {
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.4);
+}
+/* ----- end footer ------- */
+/* __________портфолио______________ */
+
+.button-portfolio {
+  background-color: var(--secong-bgc);
+  color: var(--text-title-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.button-portfolio:hover,
+.button-portfolio:focus {
+  background-color: var(--accent-color);
+  color: var(--background-color);
+}
+.portfolio-hat {
+  color: #ffffff;
+}
+.portfolio-section {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+.portfolio-section-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--text-title-color);
+}
+
+a {
+  color: inherit;
+}
