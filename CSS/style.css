@@ -1,41 +1,5 @@
-/* ___________Студия__________ */
-/* ПАЛИТРА и шрифты  */
+/* --------------------------------------------- global preferences -------------------- */
 
-/* ----хедер ----  */
-/* основной фона цвет - #ffffff */
-/* цвет текста хедера (контакты) - #757575 */
-/* заголовки (навигация хедера) - #212121 */
-/* текст лого studio - #212121 */
-/* текст лого web - #2196F3 */
-/* цвет выделения  - #ffffff */
-/* шрифты Roboto (500 - нави и контакты) Raleway (700 - лого) */
-/* letterspacing - 0.2 - navi, 0.3 - logo */
-
-/* ---------main Studio------*/
-/* основной  цвет фона - #ffffff */
-/* вторичный цвет - #F5F4FA */
-/* основной текст - #757575 */
-/* заголовки - #212121 */
-/* акцент (выделение)- #2196F3 */
-/* фон иконок соцсетей - #AFB1B8 */
-/*  цвет фона подписей к изображениям - rgba(47, 48, 58, 0.8); */
-/* цвет подписей к изображениям - #ffffff */
-/* шрифты Roboto (400 - базацы,700 - заголовки, 900 - главный заголовок) */
-/* letterspacing - 0.03,  */
-
-/* ---------main Portfolio---- */
-/* основной  цвет фона - #ffffff,   ???  #E5E5E5 */
-/* шрифты Roboto (400 - абзацы ,500 - кнопки,700 - заголовки) */
-
-/*---------футер---------- */
-/* цвет фона  футера - #2F303A */
-/* цвет фона иконок футера - rgba(255, 255, 255, 0.1) */
-/* заголовки футера  - #ffffff */
-/* основной текст футера  - rgba(47, 48, 58, 0.8); */
-/* текст вниху футера - rgba(255, 255, 255, 0.4) */
-/* шрифты Roboto (400,700) Raleway (700) */
-
-/* ---- global preferences ----- */
 :root {
   --primary-text-color: #757575;
   --text-title-color: #212121;
@@ -43,79 +7,28 @@
   --background-color: #ffffff;
   --secong-bgc: #f5f4fa;
   --footer-bgc: #2f303a;
+  --bgc-button-color: #2196f3;
+  --text-button-color: #ffffff;
 }
 
 body {
   background-color: #ffffff;
   font-family: Roboto, sans-serif;
+  font-weight: normal;
+
   font-size: 14px;
   line-height: 1.71px;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.03rem;
   color: var(--primary-text-color);
 }
 
+/* --------------------------------------------- common classes----------------------- */
 .list {
   list-style: none;
 }
-h1,
-h2,
-h3 {
-  font-family: Roboto;
-  color: var(--text-title-color);
-}
-/* ---end global oreferenses----- */
 
-/* -------- header -------------- */
-
-/* ----logo---- */
-.logo {
-  color: #2196f3;
-  font-family: Raleway, cursive;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  text-decoration: none;
+.container {
 }
-
-.logo-studio {
-  color: var(--text-title-color);
-}
-/* ---nav--- */
-.site-nav .link {
-  color: var(--text-title-color);
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-}
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: var(--accent-color);
-}
-.header-contacts {
-  color: var(--primary-text-color);
-  font-family: Roboto;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-}
-.header-contacts:hover,
-.header-contacts:focus {
-  color: var(--accent-color);
-}
-
-/* ---- end header ----- */
-
-/* ----------- main ------------ */
-
-/* -----common main ----- */
 
 .section {
   color: var(--primary-text-color);
@@ -123,178 +36,192 @@ h3 {
 
 .section-title {
   color: var(--text-title-color);
-  font-style: normal;
+
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.03rem;
 }
 
-/* -----end common main ------ */
+/* ____________________________________________  studio  ____________________________ */
 
-/*  --- hat ------ */
-.hat {
+/* --------------------------------------------- header ------------------------------- */
+
+/* ----------------logo------------------------- */
+.logo {
+  color: #2196f3;
+  font-family: Raleway, cursive;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03rem;
+  text-decoration: none;
 }
-.hat-title {
+
+.logo-studio {
+  color: var(--text-title-color);
+}
+/* ----------------nav and contact us--------------------------- */
+
+.header-text-style {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02rem;
+  text-decoration: none;
+}
+
+.nav-style {
+  color: var(--text-title-color);
+}
+
+.active-page {
+  color: var(--accent-color);
+}
+
+.us {
+  color: var(--primary-text-color);
+}
+
+.nav-style:hover,
+.nav-style:focus,
+.us:hover,
+.us:focus,
+.footer-us:hover,
+.footer-us:focus {
+  color: var(--accent-color);
+}
+
+/* --------------------------------------------- main --------------------------------- */
+
+/*  ---------------hero--------------------------- */
+.hero {
+  text-align: center;
+}
+
+.hero-title {
+  width: 696px;
+
   color: #ffffff;
   background: rgba(47, 48, 58, 0.8);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.06rem;
   text-transform: uppercase;
 }
 
-.button {
-  background-color: var(--accent-color);
-  color: var(--background-color);
-  font-family: Roboto;
-  font-weight: bold;
+.ref-style {
   font-size: 16px;
   line-height: 1.88;
 }
+.button-style {
+  background-color: var(--bgc-button-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-button-color);
+  font-weight: bold;
+  letter-spacing: 0.06rem;
+  color: #ffffff;
+}
 
-/* -----end hat ---- */
+/* ----------------features -------------------------- */
 
-/* ----- features ------ */
-.features-title {
-  color: var(--text-title-color);
+.text-style-title {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.03rem;
   text-transform: uppercase;
+  color: var(--text-title-color);
 }
-/* 
-.section-features-img {
-  background-color: #f5f4fa;
-  position: absolute;
-  width: 270px;
-  height: 120px;
-  left: 215px;
-top: 774px;
-} */
 
-/* ------- end features ------ */
-
-/* ----- our-business -------- */
-.section figcaption {
-  /* .imgtext { */
-  font-weight: bold;
+.main-text {
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.71;
+}
+/* ----------------our-business ----------------------------- */
+.section .figure {
   text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  background: rgba(47, 48, 58, 0.8);
+}
+
+.business-title {
   color: #ffffff;
-  /* color: #ff0000; */
+  background: rgba(47, 48, 58, 0.8);
 }
-
-/* ------end our-business ---- */
-
-/* ------ our team ----------- */
-.team-title {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-.team .team-text {
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  letter-spacing: 0.03em;
-  /* color: #ff0000; */
-}
-.our-team {
+/* ----------------our team ---------------------------- */
+.team {
   background-color: var(--secong-bgc);
 }
-/* ------ end our team ------- */
+.person {
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
+}
 
-/* ---our clients--------- */
-/* ---end our clients----- */
+.job-title {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
 
-/* ------- end main ------- */
-/*  -------- footer ------- */
+.name-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19x;
+  text-align: center;
+  text-transform: none;
+}
+
+/*  -------------------------------------------- footer ----------------------------------- */
 footer {
+  padding-top: 45px;
   background-color: var(--footer-bgc);
+  color: #ffffff;
 }
 .logo-footer {
+  padding: 0;
   color: #ffffff;
 }
-
-address {
+.footer-text-style {
+  font-size: 14px;
+  line-height: 1.71;
   font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #ffffff;
 }
-
 .footer-title {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: #ffffff;
 }
-
-.contacts {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+.footer-us {
   color: rgba(255, 255, 255, 0.6);
 }
-
-.form-text {
-  font-size: 16px;
-  line-height: 1.88;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
-
 .copyright {
   font-size: 12px;
-  font-weight: normal;
   line-height: 2;
   text-align: center;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.03rem;
   color: rgba(255, 255, 255, 0.4);
 }
-/* ----- end footer ------- */
-/* __________портфолио______________ */
-
-.button-portfolio {
+/* ____________________________________________  portfolio  ______________________________ */
+.portfolio-ref {
   background-color: var(--secong-bgc);
-  color: var(--text-title-color);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
   line-height: 1.62;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
 }
-.button-portfolio:hover,
-.button-portfolio:focus {
-  background-color: var(--accent-color);
-  color: var(--background-color);
+
+.portfolio-ref:hover,
+.portfolio-ref:focus {
+  background-color: var(--bgc-button-color);
+  color: var(--text-button-color);
 }
+
 .portfolio-hat {
   color: #ffffff;
 }
 .portfolio-section {
   font-size: 16px;
   line-height: 1.87;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.03rem;
   color: var(--primary-text-color);
 }
 
@@ -302,10 +229,10 @@ address {
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.06rem;
   color: var(--text-title-color);
 }
-
 a {
   color: inherit;
 }
+/* ____________________________________________  end portfolio  ________________ */

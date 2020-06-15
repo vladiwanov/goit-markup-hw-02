@@ -8,48 +8,63 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./CSS/style.css" />
   </head>
   <body>
     <header>
+      <!--header logo  -->
+
+      <a class="logo" href="”#”">Web <span class="logo-studio">Studio</span></a>
+
+      <!-- header navigation -->
       <nav>
-        <!-- <a href="/">WebStudio</a> -->
-        <!-- <a href="”#”"><span class="logo">Web</span> Studio</a> -->
-        <a class="logo" href="”#”"
-          >Web <span class="logo-studio">Studio</span></a
-        >
-        <ul class="site-nav list">
-          <li><a href="./index.html" class="link">Студия</a></li>
-          <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-          <li><a href="./contact.html" class="link">Контакты</a></li>
+        <ul class="header-text-style list">
+          <li>
+            <a href="./index.html" class="nav-style active-page">Студия</a>
+          </li>
+          <li>
+            <a href="./portfolio.html" class="nav-style">Портфолио</a>
+          </li>
+          <li>
+            <a href="./contact.html" class="nav-style">Контакты</a>
+          </li>
         </ul>
-        <a href="mailto:info@devstudio.com" class="header-contacts"
-          >info@devstudio.com</a
-        >
-        <a href="tel:+380961111111" class="header-contacts"
-          >+38 096 111 11 11</a
-        >
       </nav>
+
+      <!-- header contacts -->
+      <a href="mailto:info@devstudio.com" class="header-text-style us"
+        >info@devstudio.com</a
+      >
+      <a href="tel:+380961111111" class="header-text-style us"
+        >+38 096 111 11 11</a
+      >
     </header>
     <main>
-      <!-- секция заголовка -->
-      <section class="hat">
-        <h1 class="hat-title">Эффективные решения для вашего бизнеса</h1>
-        <button class="button">Заказать услугу</button>
+      <!-- hero -->
+      <section class="hero">
+        <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+        <button class="ref-style button-style">Заказать услугу</button>
       </section>
-      <!-- секция преимущества /features/ -->
-      <section class="section">
+
+      <!--features / секция преимущества/ -->
+      <section class="section no-padding">
         <ul class="list">
           <!-- внимание к деталям -->
           <li>
             <img
-              class="section-features-img"
+              class="features-img"
               src="./img/icons/icon1.svg"
               alt="antenna"
             />
 
-            <h2 class="features-title">Внимание к деталям</h2>
-            <p>
+            <h2 class="text-style-title">
+              Внимание к деталям
+            </h2>
+            <p class="main-text">
               Идейные соображения, а также начало повседневной работы по
               формированию позиции.
             </p>
@@ -61,8 +76,8 @@
               src="./img/icons/icon2.svg"
               alt="wach"
             />
-            <h2 class="features-title">Пунктуальность</h2>
-            <p>
+            <h2 class="text-style-title">Пунктуальность</h2>
+            <p class="main-text">
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
             </p>
@@ -74,8 +89,8 @@
               src="./img/icons/icon3.svg"
               alt="diagran on personal computer"
             />
-            <h2 class="features-title">Планирование</h2>
-            <p>
+            <h2 class="text-style-title">Планирование</h2>
+            <p class="main-text">
               Равным образом консультация с широким активом в значительной
               степени обуславливает.
             </p>
@@ -87,8 +102,8 @@
               src="./img/icons/icon4.svg"
               alt="astronaut1"
             />
-            <h2 class="features-title">Современные технологии</h2>
-            <p>
+            <h2 class="text-style-title">Современные технологии</h2>
+            <p class="main-text">
               Значимость этих проблем настолько очевидна, что реализация
               плановых заданий.
             </p>
@@ -96,42 +111,57 @@
         </ul>
       </section>
 
-      <!-- секция Чем мы занимаемся /our-business/  -->
-      <section class="section">
+      <!--our-business / секция Чем мы занимаемся/  -->
+      <section class="section our-business">
         <h2 class="section-title">Чем мы занимаемся</h2>
-        <figure>
-          <img
-            src="./img/things/desktop-apps.svg"
-            alt="Десктопные приложения"
-          />
-          <figcaption>
-            Десктопные приложения
-          </figcaption>
-        </figure>
-        <figure>
-          <img src="./img/things/mobile-apps.svg" alt="Мобильные приложения" />
-          <figcaption>
-            Мобильные приложения
-          </figcaption>
-        </figure>
-        <figure>
-          <img src="./img/things/design-sol.svg" alt="дизайнерыские решения" />
-          <figcaption>
-            Дизайнерские решения
-          </figcaption>
-        </figure>
+        <ul class="list">
+          <li>
+            <figure class="figure">
+              <img
+                src="./img/things/desktop-apps.svg"
+                alt="Десктопные приложения"
+              />
+              <figcaption class="text-style-title business-title">
+                Десктопные приложения
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="figure">
+              <img
+                src="./img/things/mobile-apps.svg"
+                alt="Мобильные приложения"
+              />
+              <figcaption class="text-style-title business-title">
+                Мобильные приложения
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="figure">
+              <img
+                src="./img/things/design-sol.svg"
+                alt="дизайнерыские решения"
+              />
+              <figcaption class="text-style-title business-title">
+                Дизайнерские решения
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
       </section>
 
-      <!-- секция наша команда /our team/ -->
-      <section class="section our-team">
+      <!--our team/ секция наша команда /-->
+      <section class="section team">
         <h2 class="section-title">Наша команда</h2>
-        <!-- секция Николай Кучеренко -->
-        <ul class="team list">
+
+        <ul class="list person">
+          <!-- section Николай Кучеренко -->
           <li>
             <img src="./img/people/person1.svg" alt="Николай Кучеренко" />
-            <h3 class="team-title">Николай Кучеренко</h3>
-            <p class="team-text">Product Designer</p>
-            <ul class="list">
+            <h3 class="text-style-title name-title">Николай Кучеренко</h3>
+            <p class="job-title">Product Designer</p>
+            <ul class="list icons">
               <li>
                 <a href="">
                   <img
@@ -158,13 +188,13 @@
             </ul>
           </li>
 
-          <!-- секция Ольга Иванова  -->
+          <!-- section Ольга Иванова  -->
           <li>
             <img src="./img/people/person2.svg" alt="Ольга Иванова" />
-            <h3 class="team-title">Ольга Иванова</h3>
-            <p class="team-text">Frontend Developer</p>
+            <h3 class="text-style-title name-title">Ольга Иванова</h3>
+            <p class="job-title">Frontend Developer</p>
 
-            <ul class="list">
+            <ul class="list icons">
               <li>
                 <a href="">
                   <img
@@ -190,11 +220,12 @@
               </li>
             </ul>
           </li>
-          <!-- секция Андрей Шевченко -->
+
+          <!-- section Андрей Шевченко -->
           <li>
             <img src="./img/people/person3.svg" alt="Андрей Шевченко" />
-            <h3 class="team-title">Андрей Шевченко</h3>
-            <p class="team-text">Marketing</p>
+            <h3 class="text-style-title name-title">Андрей Шевченко</h3>
+            <p class="job-title">Marketing</p>
             <ul class="list">
               <li>
                 <a href="">
@@ -221,12 +252,13 @@
               </li>
             </ul>
           </li>
-          <!-- секция Иван Николаев -->
+
+          <!-- section Иван Николаев -->
           <li>
             <img src="./img/people/person4.svg" alt="Иван Николаев" />
-            <h3 class="team-title">Иван Николаев</h3>
-            <p class="team-text">UI Designer</p>
-            <ul class="list">
+            <h3 class="text-style-title name-title">Иван Николаев</h3>
+            <p class="job-title">UI Designer</p>
+            <ul class="list icons">
               <li>
                 <a href="">
                   <img
@@ -254,12 +286,13 @@
           </li>
         </ul>
       </section>
-      <!-- секция постоянные клиенты -->
+
+      <!-- clients / секция постоянные клиенты /-->
       <section class="section">
         <h2 class="section-title">Постоянные клиенты</h2>
-        <img src="./img/Clients-logo/Ya-co.svg" alt="Ya & Co" />
         <img src="./img/Clients-logo/tagline-here.svg" alt="Tagline Here" />
         <img src="./img/Clients-logo/company.svg" alt="Company" />
+        <img src="./img/Clients-logo/Ya-co.svg" alt="Ya & Co" />
         <img src="./img/Clients-logo/foster-peters.svg" alt="Foster Peters" />
         <img src="./img/Clients-logo/brand.svg" alt="Brand" />
         <img
@@ -268,8 +301,8 @@
         />
       </section>
     </main>
-    <footer class="">
-      <!-- секция контактов-->
+    <footer>
+      <!-- footer contacts / секция контактов/ -->
       <section>
         <h2>
           <a class="logo" href="”#”"
@@ -277,21 +310,23 @@
           >
         </h2>
 
-        <address>
+        <address class="footer-text-style">
           <p>
             г. Киев, пр-т Леси Украинки, 26
           </p>
-          <a class="contacts" href="mailto:info@example.com"
+          <a class="footer-text-style footer-us" href="mailto:info@example.com"
             >info@example.com</a
           >
 
-          <a class="contacts" href="tel:+380991111111">+38 099 111 11 11</a>
+          <a class="footer-text-style footer-us" href="tel:+380991111111"
+            >+38 099 111 11 11</a
+          >
         </address>
       </section>
 
-      <!-- секция соцсетей -->
+      <!--footer community / cекция соцсетей / -->
       <section>
-        <h2 class="footer-title">присоединяйтесь</h2>
+        <h2 class="text-style-title footer-title">присоединяйтесь</h2>
 
         <a href="">
           <img src="./img/community-logo/instagram-logo.svg" alt="instagram"
@@ -307,16 +342,18 @@
         </a>
       </section>
 
-      <!-- секция подписки -->
-      <h2 class="footer-title">Подпишитесь на рассылку</h2>
+      <!-- footer subscribing / секция подписки / -->
+      <h2 class="text-style-title footer-title">Подпишитесь на рассылку</h2>
       <form>
         <p class="form-text"><input placeholder="E-mail" name="email" /></p>
         <p>
-          <button class="button" formaction="3298901@gmail.com">
+          <button class="ref-style button-style" formaction="3298901@gmail.com">
             Подписаться
+            <img src="./img/community-logo/send-logo.svg" alt="send logo" />
           </button>
         </p>
       </form>
+      <!--  footer developing -->
       <p class="copyright">2020 | Developed by GoIT Students</p>
     </footer>
   </body>
