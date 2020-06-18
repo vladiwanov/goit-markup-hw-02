@@ -15,23 +15,21 @@
     <link rel="stylesheet" href="./CSS/style.css" />
   </head>
   <body>
+    <!--             header                 -->
     <header>
-      <!-- header logo  -->
       <div class="container">
-        <a class="logo" href="”#”"
-          >Web <span class="logo-studio">Studio</span></a
-        >
-
-        <!--- header navigation -->
-        <nav>
-          <ul class="header-text-style list">
+        <nav class="main-nav">
+          <!-- header logo  -->
+          <a class="logo" href="#"
+            >Web <span class="logo-right">Studio</span></a
+          >
+          <!-- header navigation -->
+          <ul class="list site-nav">
             <li>
-              <a href="./index.html" class="nav-style">Студия</a>
+              <a href="./index.html" class="nav-style current">Студия</a>
             </li>
             <li>
-              <a href="./portfolio.html" class="nav-style active-page"
-                >Портфолио</a
-              >
+              <a href="./portfolio.html" class="nav-style">Портфолио</a>
             </li>
             <li>
               <a href="./contact.html" class="nav-style">Контакты</a>
@@ -39,57 +37,52 @@
           </ul>
         </nav>
 
-        <!--- header contacts -->
-        <a href="mailto:info@devstudio.com" class="header-text-style us"
-          >info@devstudio.com</a
-        >
-        <a href="tel:+380961111111" class="header-text-style us"
-          >+38 096 111 11 11</a
-        >
-        <!--end header contacts -->
+        <!--  header contacts -->
+        <ul class="list auth-nav">
+          <li>
+            <a href="mailto:info@devstudio.com" class="header-text-style us"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a href="tel:+380961111111" class="header-text-style us"
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
       </div>
     </header>
+    <!--              main                  -->
     <main>
-      <nav>
+      <!-- h1 unvisible -->
+      <h1 class="section-hat">Portfolio</h1>
+
+      <!-- navigation -->
+      <nav class="navigation">
         <div class="container">
           <ul class="list">
             <li>
-              <button
-                type="button"
-                class="text-style-title name-title portfolio-ref"
-              >
+              <button type="button" class="text-style-title name-title ref">
                 Все
               </button>
             </li>
             <li>
-              <button
-                type="button"
-                class="text-style-title name-title portfolio-ref"
-              >
+              <button type="button" class="text-style-title name-title ref">
                 Веб-сайты
               </button>
             </li>
             <li>
-              <button
-                type="button"
-                class="text-style-title name-title portfolio-ref"
-              >
+              <button type="button" class="text-style-title name-title ref">
                 Приложения
               </button>
             </li>
             <li>
-              <button
-                type="button"
-                class="text-style-title name-title portfolio-ref"
-              >
+              <button type="button" class="text-style-title name-title ref">
                 Дизайн
               </button>
             </li>
             <li>
-              <button
-                type="button"
-                class="text-style-title name-title portfolio-ref"
-              >
+              <button type="button" class="text-style-title name-title ref">
                 Маркетинг
               </button>
             </li>
@@ -97,21 +90,20 @@
         </div>
       </nav>
 
-      <h1 class="portfolio-hat">Portfolio</h1>
-
+      <!-- galery / portfolio content -->
       <section class="portfolio-section">
         <div class="container">
           <ul class="list">
             <li>
               <!-- Технокряк -->
-              <a href="">
+              <a class="section-a" href="">
                 <img
                   src="./img/img-portfolio/technocrack.svg"
                   alt="веб-сайт Технокряк"
                 />
-                <h2 class="portfolio-section-title">Технокряк</h2>
-                <p>Веб-сайт</p>
-                <p>
+                <h2 class="text-style-title section-text-title">Технокряк</h2>
+                <p class="section-p">Веб-сайт</p>
+                <p class="text-item">
                   Технокряк это современная площадка распространения
                   коронавируса. Компании используют эту платформу для цифрового
                   шпионажа и атак на защищённые сервера конкурентов.
@@ -120,16 +112,16 @@
             </li>
             <li>
               <!-- Постер New Orlean vs Golden Star -->
-              <a href="">
+              <a class="section-a" href="">
                 <img
                   src="./img/img-portfolio/design.svg"
                   alt="Постер New Orlean vs Golden Star"
                 />
-                <h2 class="portfolio-section-title">
+                <h2 class="text-style-title section-text-title">
                   Постер New Orlean vs Golden Star
                 </h2>
-                <p>Дизайн</p>
-                <p>
+                <p class="section-p">Дизайн</p>
+                <p class="text-item">
                   Технокряк это современная площадка распространения
                   коронавируса. Компании используют эту платформу для цифрового
                   шпионажа и атак на защищённые сервера конкурентов.
@@ -138,14 +130,16 @@
             </li>
             <li>
               <!-- Ресторан Seafood -->
-              <a href="">
+              <a class="section-a" href="">
                 <img
                   src="./img/img-portfolio/restaurant.svg"
                   alt="Ресторан Seafood"
                 />
-                <h2 class="portfolio-section-title">Ресторан Seafood</h2>
-                <p>Приложение</p>
-                <p>
+                <h2 class="text-style-title section-text-title">
+                  Ресторан Seafood
+                </h2>
+                <p class="section-p">Приложение</p>
+                <p class="text-item">
                   Технокряк это современная площадка распространения
                   коронавируса. Компании используют эту платформу для цифрового
                   шпионажа и атак на защищённые сервера конкурентов.
@@ -154,14 +148,16 @@
             </li>
             <li>
               <!-- Проект Prime -->
-              <a href="">
+              <a class="section-a" href="">
                 <img
                   src="./img/img-portfolio/prime-project.svg"
                   alt="Проект Prime"
                 />
-                <h2 class="portfolio-section-title">Проект Prime</h2>
-                <p>Маркетинг</p>
-                <p>
+                <h2 class="text-style-title section-text-title">
+                  Проект Prime
+                </h2>
+                <p class="section-p">Маркетинг</p>
+                <p class="text-item">
                   Технокряк это современная площадка распространения
                   коронавируса. Компании используют эту платформу для цифрового
                   шпионажа и атак на защищённые сервера конкурентов.
@@ -170,14 +166,16 @@
             </li>
             <li>
               <!-- Проект Boxes -->
-              <a href="">
+              <a class="section-a" href="">
                 <img
                   src="./img/img-portfolio/box-project.svg"
                   alt="Проект Boxes"
                 />
-                <h2 class="portfolio-section-title">Проект Boxes</h2>
-                <p>Приложение</p>
-                <p>
+                <h2 class="text-style-title section-text-title">
+                  Проект Boxes
+                </h2>
+                <p class="section-p">Приложение</p>
+                <p class="text-item">
                   Технокряк это современная площадка распространения
                   коронавируса. Компании используют эту платформу для цифрового
                   шпионажа и атак на защищённые сервера конкурентов.
@@ -186,16 +184,16 @@
             </li>
             <li>
               <!-- Inspiration has no Borders -->
-              <a href="">
+              <a class="section-a" href="">
                 <img
                   src="./img/img-portfolio/inspir-no-birders.svg"
                   alt="Inspiration has no Borders"
                 />
-                <h2 class="portfolio-section-title">
+                <h2 class="text-style-title section-text-title">
                   Inspiration has no Borders
                 </h2>
-                <p>Веб-сайт</p>
-                <p>
+                <p class="section-p">Веб-сайт</p>
+                <p class="text-item">
                   Технокряк это современная площадка распространения
                   коронавируса. Компании используют эту платформу для цифрового
                   шпионажа и атак на защищённые сервера конкурентов.
@@ -204,14 +202,16 @@
             </li>
             <li>
               <!-- Издание Limited Edition -->
-              <a href="">
+              <a class="section-a" href="">
                 <img
                   src="./img/img-portfolio/limited-edition.svg"
                   alt="Издание Limited Edition"
                 />
-                <h2 class="portfolio-section-title">Издание Limited Edition</h2>
-                <p>Дизайн</p>
-                <p>
+                <h2 class="text-style-title section-text-title">
+                  Издание Limited Edition
+                </h2>
+                <p class="section-p">Дизайн</p>
+                <p class="text-item">
                   Технокряк это современная площадка распространения
                   коронавируса. Компании используют эту платформу для цифрового
                   шпионажа и атак на защищённые сервера конкурентов.
@@ -220,14 +220,16 @@
             </li>
             <li>
               <!-- Проект LAB -->
-              <a href="">
+              <a class="section-a" href="">
                 <img
                   src="./img/img-portfolio/lab-project.svg"
                   alt="Growing Business"
                 />
-                <h2 class="portfolio-section-title">Growing Business</h2>
-                <p>Приложение</p>
-                <p>
+                <h2 class="text-style-title section-text-title">
+                  Growing Business
+                </h2>
+                <p class="section-p">Приложение</p>
+                <p class="text-item">
                   Технокряк это современная площадка распространения
                   коронавируса. Компании используют эту платформу для цифрового
                   шпионажа и атак на защищённые сервера конкурентов.
@@ -236,14 +238,14 @@
             </li>
             <li>
               <!-- Growing Business -->
-              <a href="">
+              <a class="section-a" href="">
                 <img
                   src="./img/img-portfolio/growing-busines.svg"
                   alt="Проект LAB"
                 />
-                <h2 class="portfolio-section-title">Проект LAB</h2>
-                <p>Маркетинг</p>
-                <p>
+                <h2 class="text-style-title section-text-title">Проект LAB</h2>
+                <p class="section-p">Маркетинг</p>
+                <p class="text-item">
                   Технокряк это современная площадка распространения
                   коронавируса. Компании используют эту платформу для цифрового
                   шпионажа и атак на защищённые сервера конкурентов.
@@ -254,35 +256,37 @@
         </div>
       </section>
     </main>
+
+    <!--            footer                  -->
     <footer>
       <div class="container">
-        <!-- footer contacts / секция контактов/ -->
-        <section>
-          <h2>
-            <a class="logo" href="”#”"
-              >Web <span class="logo-studio logo-footer">Studio</span></a
-            >
-          </h2>
+        <ul class="list">
+          <!-- footer logo -->
+          <li>
+            <h2>
+              <a class="logo" href="#"
+                >Web <span class="logo-reverse">Studio</span></a
+              >
+            </h2>
+          </li>
+        </ul>
+        <!--  footer contacts / секция контактов/ -->
+        <address class="footer-text-style">
+          <p>
+            г. Киев, пр-т Леси Украинки, 26
+          </p>
+          <a class="footer-text-style footer-us" href="mailto:info@example.com"
+            >info@example.com</a
+          >
 
-          <address class="footer-text-style">
-            <p>
-              г. Киев, пр-т Леси Украинки, 26
-            </p>
-            <a
-              class="footer-text-style footer-us"
-              href="mailto:info@example.com"
-              >info@example.com</a
-            >
-
-            <a class="footer-text-style footer-us" href="tel:+380991111111"
-              >+38 099 111 11 11</a
-            >
-          </address>
-        </section>
+          <a class="footer-text-style footer-us" href="tel:+380991111111"
+            >+38 099 111 11 11</a
+          >
+        </address>
 
         <!-- footer community / cекция соцсетей / -->
         <section>
-          <h2 class="text-style-title footer-title">присоединяйтесь</h2>
+          <h2 class="footer-title text-style-title">присоединяйтесь</h2>
 
           <a href="">
             <img src="./img/community-logo/instagram-logo.svg" alt="instagram"
@@ -298,7 +302,7 @@
           </a>
         </section>
 
-        <!--  footer subscribing / секция подписки / -->
+        <!-- footer subscribing / секция подписки / -->
         <h2 class="text-style-title footer-title">Подпишитесь на рассылку</h2>
         <form>
           <p class="form-text"><input placeholder="E-mail" name="email" /></p>
@@ -312,7 +316,8 @@
             </button>
           </p>
         </form>
-        <!--  footer developing -->
+
+        <!-- footer developing -->
         <p class="copyright">2020 | Developed by GoIT Students</p>
       </div>
     </footer>
