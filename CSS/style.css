@@ -1,14 +1,5 @@
 /* --------------------------------------------- global preferences -------------------- */
 
-html {
-  box-sizing: border-box;
-}
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
 :root {
   --primary-text-color: #757575;
   --text-title-color: #212121;
@@ -21,8 +12,6 @@ html {
 }
 
 body {
-  margin: 0;
-
   background-color: #ffffff;
   font-family: Roboto, sans-serif;
   font-weight: normal;
@@ -35,52 +24,26 @@ body {
 /* --------------------------------------------- common classes----------------------- */
 .list {
   list-style: none;
-  /* margin: 0; */
-  /* padding: 0; */
-}
-
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  box-sizing: content-box;
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-
   color: var(--primary-text-color);
 }
 
 .section-title {
-  margin-top: 0;
-  margin-bottom: 50px;
   color: var(--text-title-color);
 
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03rem;
-}
 
-.no-padding {
-  padding-bottom: 0;
+  letter-spacing: 0.03rem;
 }
 
 a {
   text-decoration: none;
 }
-/* ____________________________________________  studio  ____________________________ */
 
-/* --------------------------------------------- header ------------------------------- */
-header {
-  padding-top: 24px;
-  padding-bottom: 25px;
-}
 /* ----------------logo------------------------- */
 .logo {
   color: #2196f3;
@@ -100,14 +63,7 @@ header {
   color: #ffffff;
 }
 /* ----------------nav and contact us--------------------------- */
-.main-nav {
-  /* display: flex; */
-  /* background-color: red; */
-}
-.site-nav {
-  /* display: flex; */
-}
-/* ------------+++++++++++++++++++++ */
+
 .header-text-style {
   font-weight: 500;
   font-size: 14px;
@@ -118,7 +74,6 @@ header {
   color: #2196f3;
   color: var(--accent-color);
 }
-/* ++++++++++++++++++++++++++++++++++ */
 
 .site-nav li {
   font-weight: 500;
@@ -129,12 +84,10 @@ header {
 
 .nav-style {
   color: var(--text-title-color);
- 
 }
 
 .us {
   color: var(--primary-text-color);
-  
 }
 
 .nav-style:hover,
@@ -150,16 +103,8 @@ header {
 /* --------------------------------------------- main --------------------------------- */
 
 /*  ---------------hero--------------------------- */
-.hero {
-  text-align: center;
-}
 
 .hero-title {
-  margin-top: 0;
-  margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
-
   color: #ffffff;
   background: rgba(47, 48, 58, 0.8);
   font-weight: 900;
@@ -174,10 +119,6 @@ header {
   line-height: 1.88;
 }
 .button-style {
-  min-width: 136px;
-  padding: 10px 32px;
-  border-radius: 4px;
-
   background-color: var(--bgc-button-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: var(--text-button-color);
@@ -189,9 +130,6 @@ header {
 /* ----------------features -------------------------- */
 
 .text-style-title {
-  margin-top: 0;
-  margin-bottom: 10px;
-
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
@@ -201,17 +139,10 @@ header {
 }
 
 .main-text {
-  margin-top: 0;
-  margin-bottom: 0;
-
   font-size: 14px;
   line-height: 1.71;
 }
 /* ----------------our-business ----------------------------- */
-.section .figure {
-  margin: 0em;
-  text-align: center;
-}
 
 .business-title {
   color: #ffffff;
@@ -220,12 +151,8 @@ header {
 /* ----------------our team ---------------------------- */
 .team {
   background-color: var(--secong-bgc);
-  text-align: center;
 }
 .person {
-  width: 270px;
-  margin-right: auto;
-  margin-left: auto;
   background-color: #fff;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
@@ -233,45 +160,27 @@ header {
 }
 
 .job-title {
-  margin-top: 0;
-  margin-bottom: 16px;
-
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
 }
 
 .name-title {
-  margin-top: 30px;
-  margin-bottom: 10px;
-
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19x;
-  text-align: center;
+
   text-transform: none;
 }
 
 /* -------------------------clients---------------------------------------------- */
-.clients {
-  text-align: center;
-}
+
 /*  -------------------------------------------- footer ----------------------------------- */
 footer {
-  margin: 0;
-  padding-top: 45px;
-  padding-bottom: 21px;
   background-color: var(--footer-bgc);
   color: #ffffff;
 }
 
-footer p {
-  margin-top: 0;
-  margin-bottom: 9px;
-}
 .logo-footer {
-  margin-: 0;
-  padding: 0;
   color: #ffffff;
 }
 .footer-text-style {
@@ -280,13 +189,9 @@ footer p {
   font-style: normal;
 }
 .footer-title {
-  margin-bottom: 20px;
   color: #ffffff;
 }
 .footer-us {
-  display: block;
-  margin-bottom: 9px;
-
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -299,11 +204,6 @@ footer p {
 }
 /* ____________________________________________  portfolio  ______________________________ */
 
-.navigation {
-  padding-top: 93px;
-  padding-bottom: 50px;
-}
-
 .portfolio-section {
   font-size: 16px;
   line-height: 1.87;
@@ -312,14 +212,10 @@ footer p {
 }
 
 .section-hat {
-  margin: 0;
   font-size: 0px;
 }
 
 .section-text-title {
-  margin-top: 20px;
-  margin-bottom: 4px;
-
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06rem;
@@ -332,17 +228,11 @@ footer p {
 }
 
 .section-p {
-  margin-top: 0;
-  margin-bottom: 20px;
-
   font-size: 16px;
   line-height: 1.87;
 }
 
 .text-item {
-  margin: 0;
-  padding: 63px 24px;
-
   font-size: 18px;
   line-height: 1.56;
   background-color: rgba(33, 150, 243, 0.9);
@@ -350,12 +240,6 @@ footer p {
 }
 
 .ref {
-  margin: 0;
-  border-radius: 4px;
-  border-color: var(--secong-bgc);
-  border: none;
-  padding: 6px 22px;
-
   background-color: var(--secong-bgc);
   line-height: 1.62;
   text-align: center;
